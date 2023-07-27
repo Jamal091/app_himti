@@ -13,7 +13,6 @@ $txtalamat = isset($_POST["alamat"]) ? $_POST["alamat"] : "";
 $txtasaldaerah = isset($_POST["daerahasal"]) ? $_POST["daerahasal"] : "";
 $txtnohp = isset($_POST["nohp"]) ? $_POST["nohp"] : "";
 $txtpenyakit = isset($_POST["riwayatpenyakit"]) ? $_POST["riwayatpenyakit"] : "";
-$inputgambar = isset($_POST["gambar"]) ? $_POST["gambar"] : "";
 $btnsubmit = isset($_POST["submit"]) ? $_POST["submit"] : "";
 $btnreset = isset($_POST["reset"]) ? $_POST["reset"] : "";
 $notifikasi = "";
@@ -122,10 +121,6 @@ if($btnsubmit == 'submit' && $txtnamalengkap != "" && $txtnamapanggilan != "" &&
         <label for="riwayat-penyakit" class="form-label"><b>Riwayat Penyakit Di Derita</b></label>
         <textarea class="form-control" id="riwayat-penyakit" rows="3" name="riwayatpenyakit"></textarea>
       </div>
-      <div class="mb-3">
-        <label for="gambar" class="form-label"><b>Upload Gambar</b></label>
-          <input type="file" class="form-control" id="gambar" name="gambar">
-        </div>
       </div>
       <div class="d-flex justify-content-center my-4">
         <button type="submit" id="submit" class="btn btn-danger btn-xl rounded-pill shadow me-2" value="submit" name="submit">Submit</button>

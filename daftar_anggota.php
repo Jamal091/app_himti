@@ -77,7 +77,6 @@ $jumlah_data = $result->num_rows;
                         <th>Daerah Asal</th>
                         <th>No. Hp/WA</th>
                         <th>Riwayat Penyakit</th>
-                        <th>Pas Foto</th>
                     </tr>
                 <?php
                     $no = 1;
@@ -96,7 +95,6 @@ $jumlah_data = $result->num_rows;
                             echo "<td>".$data_select_anggota["daerah_asal"]."</td>";
                             echo "<td>".$data_select_anggota["no_hp"]."</td>";
                             echo "<td>".$data_select_anggota["riwayat_penyakit"]."</td>";
-                            echo "<td>".$data_select_anggota["image"]."</td>";
                         echo "</tr>";
                     $no++;
                     }
